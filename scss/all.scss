@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,600;1,600&display=swap');
+body {
+  font-family: 'Muli', sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+.btn-outline {
+  color: #222;
+  border-color: #222;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:hover {
+    box-shadow: 0 2px 8px #d4d5d9;
+  }
+}
+.btn-group-sm > .btn,
+.btn-sm {
+  font-size: 0.675rem;
+}
+.banner {
+  padding: 6rem 0;
+  color: #fff;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+.content__wrap {
+  display: flex;
+  padding: 3rem 0;
+}
+.sidebar {
+  max-width: 300px;
+  flex: 0 0 300px;
+}
+.section__nav {
+  padding-right: 60px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 60px;
+    width: 1px;
+    background-color: #eee;
+  }
+  ul {
+    padding: 0 60px 0 0;
+    margin: 0;
+    text-align: right;
+    list-style-type: none;
+    font-weight: 700;
+  }
+  li {
+    padding-bottom: 0.5rem;
+    position: relative;
+    &:after {
+      position: absolute;
+      bottom: 0.9rem;
+      right: -60px;
+      width: 10px;
+      height: 3px;
+      background-color: #60ba62;
+      z-index: 1;
+    }
+    &.active {
+      &:after {
+        content: '';
+      }
+      a {
+        color: #60ba62;
+      }
+    }
+  }
+  a {
+    color: #222;
+    &:hover {
+      color: #60ba62;
+      text-decoration: none;
+    }
+  }
+}
+.food__section {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      #29323c,
+      #485563,
+      #2b5876,
+      #4e4376
+    );
+  }
+}
+.content {
+  h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.5rem;
+    small {
+      font-weight: 700;
+      margin-left: 5px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 33px;
+      height: 3px;
+      background-image: linear-gradient(
+        to right,
+        #29323c,
+        #485563,
+        #2b5876,
+        #4e4376
+      );
+    }
+  }
+}
+.food__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-left: -30px;
+  &--col {
+    position: relative;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+.food__card {
+  padding: 20px 0;
+  &--img {
+    margin-bottom: 0.5rem;
+    position: relative;
+    img {
+      border-radius: 0.5rem;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 0.7rem;
+      line-height: 1;
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      border-radius: 0.2rem;
+      background-image: linear-gradient(
+        to right,
+        #29323c,
+        #485563,
+        #2b5876,
+        #4e4376
+      );
+      padding: 0.2rem 0.5rem;
+    }
+  }
+  &--meta {
+    font-size: 0.8rem;
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &--title {
+    font-weight: 700;
+    display: block;
+    font-size: 1rem;
+  }
+  &--footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.contact__box {
+  color: #fff;
+  background-color: #0398e0;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+#footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #0398e0;
+}
